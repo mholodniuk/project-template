@@ -1,6 +1,20 @@
 # C++ project template
 
-![files and structure](img/files.png?raw=true "Structure")
+## Structure
+```
+.
+├── CMakeLists.txt
+├── README.md
+├── app
+│   └── main.cpp
+├── inc
+│   ├── DummyClass.hpp
+│   └── ExampleClass.hpp
+└── src
+    ├── DummyClass.cpp
+    └── ExampleClass.cpp
+
+```
 
 Build:
 ```
