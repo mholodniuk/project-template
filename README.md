@@ -27,7 +27,7 @@ cmake ..
 if all goes well, you can:
 ```
 make
-./name-of-your-project
+./name_of_your_project
 ```
 The documentation is provided by Doxygen, you can find it in [docs](docs/) directory after running `make`.
 
