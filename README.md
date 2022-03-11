@@ -30,4 +30,5 @@ make
 ./name-of-your-project
 ```
 The documentation is provided by Doxygen, you can find it in [docs](docs/) directory after running `make`.
-Find out more about [Doxygen](https://www.doxygen.nl/index.html).
+
+Find out more about Doxygen [here](https://www.doxygen.nl/index.html).
