@@ -29,4 +29,5 @@ if all goes well, you can:
 make
 ./name-of-your-project
 ```
-The documentation is provided by Doxygen, you can find it in [docs](docs/)
+The documentation is provided by Doxygen, you can find it in [docs](docs/) directory after running `make`.
+Find out more about [Doxygen](https://www.doxygen.nl/index.html).
