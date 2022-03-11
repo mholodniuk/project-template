@@ -7,6 +7,8 @@
 ├── README.md
 ├── app
 │   └── main.cpp
+├── docs
+│   └── Doxyfile.in
 ├── inc
 │   ├── DummyClass.hpp
 │   └── ExampleClass.hpp
@@ -25,5 +27,6 @@ cmake ..
 if all goes well, you can:
 ```
 make
-./Example
+./name-of-your-project
 ```
+The documentation is provided by Doxygen, you can find it in [docs](docs/)

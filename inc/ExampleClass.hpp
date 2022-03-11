@@ -1,5 +1,6 @@
 #pragma once
 
+//! \brief ExampleClass
 class ExampleClass {
     int variable;
 public:
