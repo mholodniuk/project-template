@@ -7,6 +7,10 @@ set(SOURCES
     src/ExampleClass.cpp
 )
 
+add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
+add_executable(${PROJECT_NAME} app/main.cpp)
+target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib)
+
 find_package(Doxygen)
 if(DOXYGEN_FOUND)
     set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/docs/Doxyfile.in)
@@ -22,7 +26,3 @@ if(DOXYGEN_FOUND)
 else (DOXYGEN_FOUND)
     message("Doxygen need to be installed to generate the doxygen documentation")
 endif (DOXYGEN_FOUND)
-
-add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
-add_executable(${PROJECT_NAME} app/main.cpp)
-target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib)
