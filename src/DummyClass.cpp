@@ -1,5 +1,6 @@
 #include "../inc/DummyClass.hpp"
 #include <iostream>
+#include <vector>
 
 DummyClass::DummyClass(): 
     variable{} 
@@ -9,5 +10,6 @@ DummyClass::DummyClass():
 
 int DummyClass::foo() const
 {
-    return variable + 20;
+    int* pointer = nullptr;
+    return variable;
 }
