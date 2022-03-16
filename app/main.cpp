@@ -3,7 +3,7 @@
 #include <iostream>
 #include <memory>
 
-int main(int argc, char* argv[])
+int main()
 {
     // used unique_ptr in order to require c++14
     std::unique_ptr<DummyClass> e1 = std::make_unique<DummyClass>();

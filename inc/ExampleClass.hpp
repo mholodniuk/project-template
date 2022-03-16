@@ -5,5 +5,5 @@ class ExampleClass {
     int variable;
 public:
     ExampleClass();
-    void foo2();
+    void foo2() const;
 };
