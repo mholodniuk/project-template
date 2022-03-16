@@ -9,7 +9,7 @@ add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
 add_executable(${PROJECT_NAME} app/main.cpp)
 target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib)
 
-#[[
+#[[ to generate documentation uncomment 
 find_package(Doxygen)
 if(DOXYGEN_FOUND)
     set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/docs/Doxyfile.in)
