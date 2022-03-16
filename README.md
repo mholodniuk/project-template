@@ -15,7 +15,6 @@
 └── src
     ├── DummyClass.cpp
     └── ExampleClass.cpp
-
 ```
 
 ## Build using CMake
