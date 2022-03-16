@@ -1,6 +1,6 @@
 #include "../inc/DummyClass.hpp"
+#include <array>
 #include <iostream>
-#include <vector>
 
 DummyClass::DummyClass(): 
     variable{} 
@@ -8,8 +8,11 @@ DummyClass::DummyClass():
     std::cout << "Created ExampleClass1\n";
 }
 
-int DummyClass::foo() const
+void DummyClass::foo()
 {
-    int* pointer = nullptr;
-    return variable;
+    std::array<int, 3> arr = {1, 2, 3};
+    for(int it: arr) {
+        std::cout << it <<  " ";
+    }
+    std::cout<<std::endl;
 }

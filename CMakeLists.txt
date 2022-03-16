@@ -3,10 +3,7 @@ project(name_of_your_project VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCES
-    src/DummyClass.cpp
-    src/ExampleClass.cpp
-)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true inc/*.hpp src/*.cpp)
 
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
 add_executable(${PROJECT_NAME} app/main.cpp)

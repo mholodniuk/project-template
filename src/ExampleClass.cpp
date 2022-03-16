@@ -7,7 +7,7 @@ ExampleClass::ExampleClass():
     std::cout << "Created ExampleClass2\n";
 }
 
-int ExampleClass::foo2() const
+void ExampleClass::foo2()
 {
-    return variable + 10;
+    std::cout << variable + 10 << std::endl;
 }
